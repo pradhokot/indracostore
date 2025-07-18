@@ -1,0 +1,41 @@
+:root {
+   --bs-primary: #fd4f00;
+   --bs-primary-rgb: 253, 79, 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+   --bs-gutter-x: 2rem;
+   width: 100%;
+   max-width: 100%;
+}
+
+@media (min-width: 768px) {
+   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      width: 90%;
+      max-width: 1320px;
+   }
+}
+
+/* ----------------- menu */
+@media (min-width: 768px) {
+   #menu {
+      background-color: var(--bs-gray-200) !important;
+   }
+}
+
+/* ----------------- animasi marquee */
+.marquee {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   height: 2.5em;
+}
+
+.marquee-text {
+   display: inline-block;
+   white-space: nowrap;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   will-change: transform;
+}
