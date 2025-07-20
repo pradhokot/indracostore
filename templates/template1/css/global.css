@@ -16,6 +16,29 @@
    }
 }
 
+.fs-small {
+   font-size: small !important;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+header.page-header {
+   position: --webkit-sticky;
+   position: sticky;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1020;
+}
+
+main.main-content {
+   flex-grow: 1;
+}
+
 /* ----------------- menu */
 @media (min-width: 768px) {
    #menu {
