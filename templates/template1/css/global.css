@@ -3,21 +3,72 @@
    --bs-primary-rgb: 253, 79, 0;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
    --bs-gutter-x: 2rem;
    width: 100%;
    max-width: 100%;
 }
 
+.fs-small {
+   font-size: small !important;
+}
+
+.link-hover {
+   color: inherit !important;
+   opacity: .75;
+}
+
+.link-hover:hover,
+.link-hover:focus,
+.link-hover.active {
+   opacity: 1;
+}
+
+.underline-hover {
+   text-decoration: none;
+}
+
+.underline-hover:hover,
+.underline-hover:focus,
+.underline-hover.active {
+   text-decoration: underline;
+}
+
 @media (min-width: 768px) {
-   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      width: 90%;
+
+   .container,
+   .container-sm,
+   .container-md {
+      width: 96%;
       max-width: 1320px;
    }
 }
 
-.fs-small {
-   font-size: small !important;
+@media (min-width: 992px) {
+   .container-lg {
+      width: 96%;
+      max-width: 1320px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container-xl {
+      width: 96%;
+      max-width: 1320px;
+   }
+}
+
+@media (min-width: 1400px) {
+   .container-xxl {
+      width: 96%;
+      max-width: 1320px;
+   }
 }
 
 body {
@@ -46,19 +97,10 @@ main.main-content {
    }
 }
 
-/* ----------------- animasi marquee */
-.marquee {
-   width: 100%;
-   overflow: hidden;
-   position: relative;
-   height: 2.5em;
-}
-
-.marquee-text {
-   display: inline-block;
-   white-space: nowrap;
-   position: absolute;
-   left: 0;
-   top: 50%;
-   will-change: transform;
+/* ----------------- runtext */
+.runtext {
+   height: 2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

@@ -1,0 +1,15 @@
+.marquee {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   height: 2.5em;
+}
+
+.marquee-text {
+   display: inline-block;
+   white-space: nowrap;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   will-change: transform;
+}
