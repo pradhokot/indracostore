@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="shortcut icon" href="../../assets/img/icon-indraco.ico" type="image/x-icon">
+   <link rel="stylesheet" href="../../assets/vendors/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../../assets/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
+   <link rel="stylesheet" href="../../assets/fonts/HelveticaNeue/HelveticaNeue.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- <style>* {outline: solid 1px green;}</style> -->
+</head>
+<body>
+
+   <section aria-label="topbar" class="text-bg-dark">
+      <div class="container d-flex">
+         <div class="select-language d-inline-flex ms-auto">
+            <button class="btn btn-sm btn-lang lang-eng text-reset d-flex align-items-center column-gap-2 px-0 rounded-0">
+               <img src="../../assets/img/flag-eng.png" width="14" height="auto" alt="English Flag" class=""> <span>ENGLISH</span>
+            </button>
+            <div class="py-2 mx-2"><div class="vr h-100"></div></div>
+            <button class="btn btn-sm btn-lang lang-ina text-reset d-flex align-items-center column-gap-2 px-0 rounded-0">
+               <img src="../../assets/img/flag-ina.png" width="14" height="auto" alt="Indonesia Flag" class=""> <span>INDONESIA</span>
+            </button>
+         </div>
+      </div><!-- end container -->
+   </section><!-- end topbar -->
+
+   <header aria-label="page header" class="sticky-top bg-body">
+      <div class="container d-flex align-items-center py-2 column-gap-3">
+         <button class="btn rounded-0 d-lg-none p-0" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <i class="fas fa-bars fa-lg"></i>
+         </button>
+         <h1 class="m-0 lh-base d-flex" style="font-size: inherit;">
+            <a href="index.html" class="text-decoration-none text-reset d-flex py-1">
+               <img src="../../assets/img/logo-indracostore.svg" width="100%" height="auto" alt="INDRACOSTORE Logo" style="max-width: calc(14rem + 1vw);">
+            </a>
+         </h1>
+         <ul class="list-unstyled m-0 d-inline-flex align-items-center column-gap-md-3 flex-grow-1 justify-content-end">
+            <li>
+               <button class="btn rounded-0 d-lg-none">
+                  <i class="fas fa-search"></i>
+               </button>
+               <form role="search" class="input-group bg-body border border-secondary d-none d-lg-flex position-relative" action="#" method="get">
+                  <label for="search" class="visually-hidden">Cari Produk</label>
+                  <input type="search" id="search" name="q" class="form-control rounded-0 border-0 bg-transparent" placeholder="Cari produk...">
+                  <button type="submit" class="btn rounded-0">
+                     <i class="fas fa-search" aria-hidden="true"></i>
+                     <span class="visually-hidden">Cari</span>
+                  </button>
+               </form>
+            </li>
+            <li class="d-none d-lg-block">
+               <div class="dropdown">
+                  <button class="btn rounded-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown-user">
+                     <i class="fas fa-user"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end rounded-0" id="dropdown-user">
+                     <a href="#" class="dropdown-item media">
+                        <span class="media-header"><i class="fas fa-user"></i></span>
+                        <span class="media-body">Sign Up</span>
+                     </a>
+                     <a href="#" class="dropdown-item media">
+                        <span class="media-header"><i class="fas fa-user"></i></span>
+                        <span class="media-body">Sign In</span>
+                     </a>
+                  </div>
+               </div>
+            </li>
+            <li class="position-relative">
+               <a href="#" class="btn rounded-0">
+                  <i class="fa fa-shopping-cart"></i>
+               </a>
+               <div class="position-absolute top-0 end-0">
+                  <div class="position-relative">
+                     <div class="bg-primary rounded-circle border border-white" style="padding: .6rem;"></div>
+                     <div class="text-center text-white position-absolute top-50 start-50 translate-middle" style="font-size: small;">
+                        <strong class="fw-medium">4</strong>
+                     </div>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div><!-- end container -->
+   </header><!-- end page header -->
+
+   <nav aria-label="page navigation" role="navigation" style="background-color: #f1f2f2;">
+      <div class="container">
+         <div class="offcanvas-lg offcanvas-start" id="menu">
+            <div class="offcanvas-header">
+               <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
+            </div>
+            <div class="offcanvas-body">
+               <ul class="nav flex-column flex-lg-row justify-content-lg-center w-100">
+                  <li class="nav-item">
+                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                        <strong class="fw-medium">CONSUMER</strong>
+                     </a>
+                  </li>
+                  <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                        <strong class="fw-medium">MACHINE & EQUIPMENT</strong>
+                     </a>
+                  </li>
+                  <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                        <strong class="fw-medium">PROMO</strong>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div><!-- end menu -->
+      </div><!-- end container -->
+   </nav>
+
+   <section aria-label="section banner" class="mb-3 mb-lg-5">
+      <div class="bg-dark">
+         <div style="aspect-ratio: 1/1;" class="d-lg-none"></div>
+         <div style="aspect-ratio: 3.6/1;" class="d-none d-lg-block"></div>
+      </div>
+   </section><!-- end section banner -->
+
+   <main aria-label="main content">
+      <div class="container">
+         <div class="row mb-3 align-items-baseline">
+            <div class="col">
+               <h2 class="fs-3">
+                  <strong class="fw-medium">Kopi Uang Emas</strong>
+               </h2>
+               <p class="d-none d-md-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus commodi voluptas aut veniam. Totam possimus eius dicta, officiis laboriosam rerum. Suscipit totam repellendus vitae cum minima iure, assumenda eaque.
+               </p>
+            </div><!-- end col -->
+            <div class="col col-auto">
+               <button class="btn btn-outline-dark rounded-0" data-bs-toggle="offcanvas" data-bs-target="#filterSort">
+                  <i class="fas fa-filter me-2"></i> <span>Filter | Sort</span>
+               </button>
+            </div><!-- end col -->
+         </div><!-- end row -->
+         <div class="vh-100"></div>
+      </div><!-- end container -->
+   </main><!-- end main content -->
+
+   <aside aria-label="filter product">
+      <div class="offcanvas offcanvas-end" id="filterSort">
+         <div class="offcanvas-header">
+            <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#filterSort"></button>
+         </div>
+         <div class="offcanvas-body"></div>
+      </div><!-- end filter & sort -->
+   </aside><!-- end filter product -->
+
+   <footer aria-label="page footer" class="small py-3" style="background-color: #f1f2f2; padding-top: 2rem !important;">
+      <div class="container">
+         <div class="row" style="row-gap: 2rem;">
+            <div class="col col-12 col-lg-auto order-lg-2 d-flex flex-column" style="max-width: 18rem;">
+               <div class="flex-grow-1">
+                  <h5 class="fs-6 text-uppercase d-none">
+                     <strong class="fw-medium">sosial media</strong>
+                  </h5>
+                  <ul class="list-unstyled text-capitalize d-flex flex-wrap gap-3">
+                     <li><a href="#" class="text-reset"><i class="fab fa-x-twitter fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-instagram fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-facebook-f fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-youtube fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-tiktok fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-linkedin-in fa-xl"></i></a></li>
+                  </ul>
+               </div>
+               <div>
+                  <p>
+                     Bergabunglah dengan kami dan dapatkan penawaran-penawaran menarik lainnya.
+                  </p>
+                  <a href="#" class="btn btn-outline-dark rounded-0 w-100">
+                     SUBSCRIBE
+                  </a>
+               </div>
+            </div><!-- end col -->
+            <div class="col col-12 col-lg order-lg-1">
+               <div class="row g-0 column-gap-5 row-gap-3">
+                  <div class="col col-auto">
+                     <h5 class="fs-6 text-uppercase">
+                        <strong class="fw-medium">informasi</strong>
+                     </h5>
+                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
+                        <li><a href="#" class="text-reset">hubungi kami</a></li>
+                        <li><a href="#" class="text-reset">tentang kami</a></li>
+                        <li><a href="#" class="text-reset">berita</a></li>
+                        <li><a href="#" class="text-reset">promo</a></li>
+                        <li><a href="#" class="text-reset">KOL</a></li>
+                     </ul>
+                  </div><!-- end col -->
+                  <div class="col col-auto">
+                     <h5 class="fs-6 text-uppercase">
+                        <strong class="fw-medium">akun</strong>
+                     </h5>
+                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
+                        <li><a href="#" class="text-reset">akun saya</a></li>
+                        <li><a href="#" class="text-reset">konfirmasi pembayaran</a></li>
+                        <li><a href="#" class="text-reset">pesanan saya</a></li>
+                        <li><a href="#" class="text-reset">lacak pengiriman</a></li>
+                     </ul>
+                  </div><!-- end col -->
+                  <div class="col col-auto">
+                     <h5 class="fs-6 text-uppercase">
+                        <strong class="fw-medium">belanja</strong>
+                     </h5>
+                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
+                        <li><a href="#" class="text-reset">cara pembelian</a></li>
+                        <li><a href="#" class="text-reset">cara pembayaran</a></li>
+                        <li><a href="#" class="text-reset">cara pengembalian</a></li>
+                     </ul>
+                  </div><!-- end col -->
+                  <div class="col col-auto">
+                     <h5 class="fs-6 text-uppercase">
+                        <strong class="fw-medium">layanan</strong>
+                     </h5>
+                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
+                        <li><a href="#" class="text-reset">kebijakan privasi</a></li>
+                        <li><a href="#" class="text-reset">syarat & ketentuan</a></li>
+                        <li><a href="#" class="text-reset">FAQ</a></li>
+                     </ul>
+                  </div><!-- end col -->
+               </div><!-- end row -->
+            </div><!-- end col -->
+         </div><!-- end row -->
+      </div><!-- end container -->
+      <hr>
+      <p class="text-center">
+         &copy; 2025 Copyright INDRACOSTORE
+      </p>
+   </footer><!-- end page footer -->
+
+   <script src="../../assets/vendors/jquery-3.7.1.min.js"></script>
+   <script src="../../assets/vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+   <script src="js/scripts.js"></script>
+</body>
+</html>

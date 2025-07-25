@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>INDRACOSTORE &bull; INDRACO Roasting fine exquisite coffee since 1971</title>
    <link rel="shortcut icon" href="../../assets/img/icon-indraco.ico" type="image/x-icon">
    <link rel="stylesheet" href="../../assets/vendors/bootstrap-5.3.7-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="../../assets/vendors/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -15,103 +15,101 @@
 </head>
 <body>
 
-   <div class="runtext text-bg-primary">
-      <div class="container-lg py-1">
-         <marquee behavior="" direction="" class="d-block">
-            <a href="#" class="text-reset">
-               SUMMER SALE BUY 2 GET 1 FREE | FREE SHIPPING FOR ORDERS OVER S$30 | KRIS+ IS BACK - GET YOUR 20% OFF NOW!
-            </a>
-         </marquee>
-      </div><!-- end container -->
-   </div><!-- end runtext -->
+   <script src="layout/marquee.js"></script>
+   <script src="layout/page-header.js"></script>
+   <script src="layout/navbar.js"></script>
 
-   <header class="bg-body position-sticky top-0 end-0 start-0">
-      <div class="container d-flex align-items-center">
-         <h1 class="me-auto">
-            <a href="index.html" class="text-reset text-decoration-none">
-               <img src="" alt="INDRACOSTORE" class="brand-img" width="100%" height="auto">
-            </a>
-         </h1>
-         <button class="btn rounded-0 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menu">
-            <i class="fas fa-bars"></i>
-         </button>
-      </div><!-- end container -->
-   </header>
+   <section class="bg-dark home-banner mb-lg-5" aria-label="home banner">
+      <div class="d-lg-none" style="aspect-ratio: 1/1;"></div>
+      <div class="d-none d-lg-block" style="aspect-ratio: 3.6/1;"></div>
+   </section>
 
-   <nav style="background-color: var(--bs-gray-200);">
-      <div class="container">
-         <div id="menu" class="offcanvas-lg offcanvas-end" z-index="-1">
-            <div class="offcanvas-header">
-               <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
-            </div>
-            <div class="offcanvas-body">
-               <ul class="nav flex-column flex-lg-row justify-content-lg-center w-100">
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        product
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        product
-                     </a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                        product
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div><!-- end menu -->
-      </div><!-- end container -->
-   </nav>
+   <div class="container flex-grow-1">
+      <div class="row align-items-lg-baseline gx-lg-5">
 
-   <div class="container">
-      <div class="row">
+         <div class="col col-12 col-lg-auto sticky-top">
+            <div class="sticky-sidebar sticky-top">
 
-         <div class="col col-12 col-lg-auto position-sticky end-0 start-0" style="top: 45px;">
-            <div class="bg-body d-lg-none">
-               <button class="btn btn-outline-dark rounded-0 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
-                  FILTER
-               </button>
-            </div>
-            <aside id="sidebar" class="offcanvas-lg offcanvas-start" z-index="-1">
-               <div class="offcanvas-header">
-                  <button class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
-               </div>
-               <div class="offcanvas-body">
-                  <form action="">
-                     <div class="input-group border border-dark">
-                        <input type="search" class="form-control rounded-0 border-0">
-                        <button class="btn rounded-0">
-                           <i class="fas fa-search"></i>
+               <section class="bg-body pb-3 py-3">
+                  <div class="row g-2">
+                     <div class="col col-auto d-lg-none">
+                        <button class="btn btn-outline-dark rounded-0 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                           <i class="fas fa-filter"></i> <span>FILTER</span>
                         </button>
-                     </div>
-                  </form>
-               </div>
-            </aside>
+                     </div><!-- end col -->
+                     <div class="col col-lg-12">
+                        <form action="">
+                           <div class="input-group border border-dark">
+                              <input type="search" class="form-control rounded-0 border-0" placeholder="Search">
+                              <button class="btn rounded-0">
+                                 <i class="fas fa-search"></i>
+                              </button>
+                           </div>
+                        </form>
+                     </div><!-- end col -->
+                  </div><!-- end row -->
+               </section>
+   
+               <aside id="sidebar" class="offcanvas-lg offcanvas-start" z-index="-1" aria-label="filter menu">
+                  <div class="offcanvas-header">
+                     <button class="btn-close" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <ul class="nav flex-column text-capitalize">
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link text-reset px-0">kopi</a>
+                        </li>
+                     </ul>
+                  </div>
+               </aside>
+               
+            </div>
          </div><!-- end col -->
 
          <div class="col col-12 col-lg">
-            <main>
-               <div class="vh-100">
+            <main aria-label="main content">
+               <article class="vh-100">
+                  <h4>section 1</h4>
                   <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium incidunt maiores, consectetur temporibus commodi deleniti corrupti, explicabo in consequatur facilis, repellat animi dolorum quo iure accusantium nihil asperiores sed.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit, ratione quia ipsam quas possimus ducimus culpa accusantium doloribus inventore aperiam, explicabo quos voluptatum accusamus necessitatibus praesentium laborum fugiat nostrum.
+                     <br><br>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, voluptas, excepturi debitis qui deserunt laboriosam incidunt corporis a nemo aliquam, quos magnam est delectus ipsa veritatis sapiente labore alias praesentium?
                   </p>
+               </article>
+
+               <article class="vh-100">
+                  <h4>section 2</h4>
                   <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque perferendis est dicta rerum dolorem temporibus rem odit a quam, totam doloribus, eum quasi labore illo! Asperiores magni illo corrupti.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet velit, ratione quia ipsam quas possimus ducimus culpa accusantium doloribus inventore aperiam, explicabo quos voluptatum accusamus necessitatibus praesentium laborum fugiat nostrum.
+                     <br><br>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, voluptas, excepturi debitis qui deserunt laboriosam incidunt corporis a nemo aliquam, quos magnam est delectus ipsa veritatis sapiente labore alias praesentium?
                   </p>
-               </div>
-               <div class="vh-100"></div>
+               </article>
             </main>
          </div><!-- end col -->
 
       </div><!-- end row -->
    </div><!-- end container -->
 
+   <script src="layout/page-footer.js"></script>
+   
    <script src="../../assets/vendors/jquery-3.7.1.min.js"></script>
    <script src="../../assets/vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
-   <!-- <script src="js/global.js"></script> -->
+   <script src="js/global.js"></script>
 </body>
 </html>

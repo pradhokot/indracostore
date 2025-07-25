@@ -1,0 +1,27 @@
+:root {
+   --bs-primary: #fd4f00;
+   --bs-primary-rgb: 253, 79, 0;
+   --bs-dark: #363636;
+   --bs-dark-rgb: 54, 54, 54;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+main[aria-label="main content"] {
+   flex-grow: 1;
+}
+
+.media {
+   width: 100%;
+   display: flex;
+   align-items: baseline;
+   column-gap: .25rem;
+}
+
+.media-header {
+   min-width: 22.5%;
+}
