@@ -53,25 +53,7 @@
                </form>
             </li>
             <li class="d-none d-lg-block">
-               <div class="dropdown">
-                  <button class="btn rounded-0 border-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown-user">
-                     <i class="fas fa-user"></i><span class="visually-hidden">User</span>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end rounded-0" id="dropdown-user">
-                     <li>
-                        <a href="#" class="dropdown-item media">
-                           <span class="media-header"><i class="fas fa-user"></i></span>
-                           <span class="media-body">Sign Up</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#" class="dropdown-item media">
-                           <span class="media-header"><i class="fas fa-user"></i></span>
-                           <span class="media-body">Sign In</span>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
+               <script src="layout/trigger-account.js"></script>
             </li>
             <li class="position-relative">
                <a href="#" class="btn rounded-0 border-0">
@@ -79,7 +61,7 @@
                </a>
                <div class="position-absolute top-0 end-0">
                   <div class="position-relative">
-                     <div class="bg-primary rounded-circle border border-white" style="padding: .6rem;"></div>
+                     <div class="bg-danger rounded-circle border border-white" style="padding: .56rem;"></div>
                      <div class="text-center text-white position-absolute top-50 start-50 translate-middle" style="font-size: small;">
                         <strong class="fw-medium">4</strong>
                      </div>
@@ -97,7 +79,7 @@
                <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
             </div>
             <div class="offcanvas-body">
-               <nav aria-label="page navigation" role="navigation">
+               <nav aria-label="page navigation" role="navigation" class="w-100">
                   <ul class="nav flex-column flex-lg-row justify-content-lg-center w-100">
                      <li class="nav-item">
                         <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
@@ -118,6 +100,17 @@
                      </li>
                   </ul>
                </nav>
+            </div>
+            <div class="offcanvas-header flex-column row-gap-3 small">
+               <hr class="w-100 m-0">
+               <div class="small w-100">
+                  <div class="float-end small">
+                     <script src="layout/sosmed.js"></script>
+                  </div>
+               </div>
+               <div class="trigger-account w-100">
+                  <script src="layout/trigger-account.js"></script>
+               </div>
             </div>
          </div><!-- end menu -->
       </div><!-- end container -->
@@ -163,19 +156,12 @@
    <footer aria-label="page footer" class="small py-3" style="background-color: #f1f2f2; padding-top: 2rem !important;">
       <div class="container">
          <div class="row" style="row-gap: 2rem;">
-            <div class="col col-12 col-lg-auto order-lg-2 d-flex flex-column" style="max-width: 18rem;">
+            <div class="col col-12 col-lg-auto order-lg-2 d-flex flex-column column-sidefooter">
                <div class="flex-grow-1">
                   <h5 class="fs-6 text-uppercase d-none">
                      <strong class="fw-medium">sosial media</strong>
                   </h5>
-                  <ul class="list-unstyled text-capitalize d-flex flex-wrap gap-3">
-                     <li><a href="#" class="text-reset"><i class="fab fa-x-twitter fa-xl"></i><span class="visually-hidden">Twitter</span></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-instagram fa-xl"></i><span class="visually-hidden">Instagram</span></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-facebook-f fa-xl"></i><span class="visually-hidden">Facebook</span></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-youtube fa-xl"></i><span class="visually-hidden">Youtube</span></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-tiktok fa-xl"></i><span class="visually-hidden">Tiktok</span></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-linkedin-in fa-xl"></i><span class="visually-hidden">Linkedin</span></a></li>
-                  </ul>
+                  <script src="layout/sosmed.js"></script>
                </div>
                <div class="mb-lg-3">
                   <p>
