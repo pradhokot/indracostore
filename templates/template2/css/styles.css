@@ -15,6 +15,16 @@ main[aria-label="main content"] {
    flex-grow: 1;
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+   --bs-gutter-x: 2rem;
+}
+
 .media {
    width: 100%;
    display: flex;

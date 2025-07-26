@@ -13,7 +13,7 @@
 </head>
 <body>
 
-   <section aria-label="topbar" class="text-bg-dark">
+   <div class="text-bg-dark">
       <div class="container d-flex">
          <div class="select-language d-inline-flex ms-auto">
             <button class="btn btn-sm btn-lang lang-eng text-reset d-flex align-items-center column-gap-2 px-0 rounded-0">
@@ -25,7 +25,7 @@
             </button>
          </div>
       </div><!-- end container -->
-   </section><!-- end topbar -->
+   </div><!-- end topbar -->
 
    <header aria-label="page header" class="sticky-top bg-body">
       <div class="container d-flex align-items-center py-2 column-gap-3">
@@ -34,7 +34,8 @@
          </button>
          <h1 class="m-0 lh-base d-flex" style="font-size: inherit;">
             <a href="index.html" class="text-decoration-none text-reset d-flex py-1">
-               <img src="../../assets/img/logo-indracostore.svg" width="100%" height="auto" alt="INDRACOSTORE Logo" style="max-width: calc(14rem + 1vw);">
+               <img src="../../assets/img/logo-indracostore.svg" width="100%" height="auto" alt="INDRACOSTORE" style="max-width: calc(14rem + 1.125vw);">
+               <span class="visually-hidden">INDRACOSTORE</span>
             </a>
          </h1>
          <ul class="list-unstyled m-0 d-inline-flex align-items-center column-gap-md-3 flex-grow-1 justify-content-end">
@@ -53,24 +54,28 @@
             </li>
             <li class="d-none d-lg-block">
                <div class="dropdown">
-                  <button class="btn rounded-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown-user">
-                     <i class="fas fa-user"></i>
+                  <button class="btn rounded-0 border-0 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#dropdown-user">
+                     <i class="fas fa-user"></i><span class="visually-hidden">User</span>
                   </button>
-                  <div class="dropdown-menu dropdown-menu-end rounded-0" id="dropdown-user">
-                     <a href="#" class="dropdown-item media">
-                        <span class="media-header"><i class="fas fa-user"></i></span>
-                        <span class="media-body">Sign Up</span>
-                     </a>
-                     <a href="#" class="dropdown-item media">
-                        <span class="media-header"><i class="fas fa-user"></i></span>
-                        <span class="media-body">Sign In</span>
-                     </a>
-                  </div>
+                  <ul class="dropdown-menu dropdown-menu-end rounded-0" id="dropdown-user">
+                     <li>
+                        <a href="#" class="dropdown-item media">
+                           <span class="media-header"><i class="fas fa-user"></i></span>
+                           <span class="media-body">Sign Up</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="dropdown-item media">
+                           <span class="media-header"><i class="fas fa-user"></i></span>
+                           <span class="media-body">Sign In</span>
+                        </a>
+                     </li>
+                  </ul>
                </div>
             </li>
             <li class="position-relative">
-               <a href="#" class="btn rounded-0">
-                  <i class="fa fa-shopping-cart"></i>
+               <a href="#" class="btn rounded-0 border-0">
+                  <i class="fa fa-shopping-cart"></i><span class="visually-hidden">Shopping Cart</span>
                </a>
                <div class="position-absolute top-0 end-0">
                   <div class="position-relative">
@@ -85,43 +90,45 @@
       </div><!-- end container -->
    </header><!-- end page header -->
 
-   <nav aria-label="page navigation" role="navigation" style="background-color: #f1f2f2;">
+   <div style="background-color: #f1f2f2;">
       <div class="container">
          <div class="offcanvas-lg offcanvas-start" id="menu">
             <div class="offcanvas-header">
                <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
             </div>
             <div class="offcanvas-body">
-               <ul class="nav flex-column flex-lg-row justify-content-lg-center w-100">
-                  <li class="nav-item">
-                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
-                        <strong class="fw-medium">CONSUMER</strong>
-                     </a>
-                  </li>
-                  <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
-                        <strong class="fw-medium">MACHINE & EQUIPMENT</strong>
-                     </a>
-                  </li>
-                  <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
-                  <li class="nav-item">
-                     <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
-                        <strong class="fw-medium">PROMO</strong>
-                     </a>
-                  </li>
-               </ul>
+               <nav aria-label="page navigation" role="navigation">
+                  <ul class="nav flex-column flex-lg-row justify-content-lg-center w-100">
+                     <li class="nav-item">
+                        <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                           <strong class="fw-medium">CONSUMER</strong>
+                        </a>
+                     </li>
+                     <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                           <strong class="fw-medium">MACHINE & EQUIPMENT</strong>
+                        </a>
+                     </li>
+                     <li class="nav-item py-2 d-none d-lg-inline"><div class="vr h-100"></div></li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link rounded-0 text-reset px-0 px-lg-3">
+                           <strong class="fw-medium">PROMO</strong>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
             </div>
          </div><!-- end menu -->
       </div><!-- end container -->
-   </nav>
+   </div>
 
-   <section aria-label="section banner" class="mb-3 mb-lg-5">
+   <section aria-label="home banner" class="mb-3 mb-lg-5">
       <div class="bg-dark">
          <div style="aspect-ratio: 1/1;" class="d-lg-none"></div>
          <div style="aspect-ratio: 3.6/1;" class="d-none d-lg-block"></div>
       </div>
-   </section><!-- end section banner -->
+   </section><!-- end home banner -->
 
    <main aria-label="main content">
       <div class="container">
@@ -162,26 +169,26 @@
                      <strong class="fw-medium">sosial media</strong>
                   </h5>
                   <ul class="list-unstyled text-capitalize d-flex flex-wrap gap-3">
-                     <li><a href="#" class="text-reset"><i class="fab fa-x-twitter fa-xl"></i></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-instagram fa-xl"></i></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-facebook-f fa-xl"></i></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-youtube fa-xl"></i></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-tiktok fa-xl"></i></a></li>
-                     <li><a href="#" class="text-reset"><i class="fab fa-linkedin-in fa-xl"></i></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-x-twitter fa-xl"></i><span class="visually-hidden">Twitter</span></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-instagram fa-xl"></i><span class="visually-hidden">Instagram</span></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-facebook-f fa-xl"></i><span class="visually-hidden">Facebook</span></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-youtube fa-xl"></i><span class="visually-hidden">Youtube</span></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-tiktok fa-xl"></i><span class="visually-hidden">Tiktok</span></a></li>
+                     <li><a href="#" class="text-reset"><i class="fab fa-linkedin-in fa-xl"></i><span class="visually-hidden">Linkedin</span></a></li>
                   </ul>
                </div>
-               <div>
+               <div class="mb-lg-3">
                   <p>
                      Bergabunglah dengan kami dan dapatkan penawaran-penawaran menarik lainnya.
                   </p>
-                  <a href="#" class="btn btn-outline-dark rounded-0 w-100">
-                     SUBSCRIBE
+                  <a href="#" class="btn btn-outline-dark rounded-0 w-100 text-uppercase">
+                     subscribe
                   </a>
                </div>
             </div><!-- end col -->
             <div class="col col-12 col-lg order-lg-1">
-               <div class="row g-0 column-gap-5 row-gap-3">
-                  <div class="col col-auto">
+               <div class="row row-cols-2 row-gap-3 row-cols-md-auto justify-content-md-between row-cols-lg-auto justify-content-lg-start g-lg-0 column-gap-lg-5">
+                  <div class="col">
                      <h5 class="fs-6 text-uppercase">
                         <strong class="fw-medium">informasi</strong>
                      </h5>
@@ -193,7 +200,7 @@
                         <li><a href="#" class="text-reset">KOL</a></li>
                      </ul>
                   </div><!-- end col -->
-                  <div class="col col-auto">
+                  <div class="col">
                      <h5 class="fs-6 text-uppercase">
                         <strong class="fw-medium">akun</strong>
                      </h5>
@@ -204,7 +211,7 @@
                         <li><a href="#" class="text-reset">lacak pengiriman</a></li>
                      </ul>
                   </div><!-- end col -->
-                  <div class="col col-auto">
+                  <div class="col">
                      <h5 class="fs-6 text-uppercase">
                         <strong class="fw-medium">belanja</strong>
                      </h5>
@@ -214,7 +221,7 @@
                         <li><a href="#" class="text-reset">cara pengembalian</a></li>
                      </ul>
                   </div><!-- end col -->
-                  <div class="col col-auto">
+                  <div class="col">
                      <h5 class="fs-6 text-uppercase">
                         <strong class="fw-medium">layanan</strong>
                      </h5>
@@ -229,7 +236,7 @@
          </div><!-- end row -->
       </div><!-- end container -->
       <hr>
-      <p class="text-center">
+      <p class="text-center opacity-75">
          &copy; 2025 Copyright INDRACOSTORE
       </p>
    </footer><!-- end page footer -->
