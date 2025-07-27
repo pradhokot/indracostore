@@ -28,8 +28,8 @@
    </div><!-- end topbar -->
 
    <header aria-label="page header" class="sticky-top bg-body">
-      <div class="container d-flex align-items-center py-2 column-gap-3">
-         <button class="btn rounded-0 d-lg-none p-0" data-bs-toggle="offcanvas" data-bs-target="#menu">
+      <div class="container d-flex align-items-center py-2 py-md-3 column-gap-3">
+         <button class="btn rounded-0 border-0 d-md-none p-0" data-bs-toggle="offcanvas" data-bs-target="#menu">
             <i class="fas fa-bars fa-lg"></i>
          </button>
          <h1 class="m-0 lh-base d-flex" style="font-size: inherit;">
@@ -40,10 +40,10 @@
          </h1>
          <ul class="list-unstyled m-0 d-inline-flex align-items-center column-gap-md-3 flex-grow-1 justify-content-end">
             <li>
-               <button class="btn rounded-0 d-lg-none">
+               <button class="btn rounded-0 d-md-none">
                   <i class="fas fa-search"></i>
                </button>
-               <form role="search" class="input-group bg-body border border-secondary d-none d-lg-flex position-relative" action="#" method="get">
+               <form role="search" class="input-group bg-body border border-secondary d-none d-md-flex position-relative" action="#" method="get">
                   <label for="search" class="visually-hidden">Cari Produk</label>
                   <input type="search" id="search" name="q" class="form-control rounded-0 border-0 bg-transparent" placeholder="Cari produk...">
                   <button type="submit" class="btn rounded-0">
@@ -52,7 +52,7 @@
                   </button>
                </form>
             </li>
-            <li class="d-none d-lg-block">
+            <li class="d-none d-md-block">
                <script src="layout/trigger-account.js"></script>
             </li>
             <li class="position-relative">
@@ -75,7 +75,31 @@
    <div style="background-color: #f1f2f2;">
       <div class="container">
          <div class="offcanvas-lg offcanvas-start" id="menu">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header align-items-start" style="background-color: #f1f2f2;">
+               <div class="d-flex align-items-center gap-3">
+                  <div>
+                     <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-dark-subtle" style="min-width: 3rem;">
+                        <div class="z-0">
+                           <div class="position-relative w-100 h-100">
+                              <i class="fas fa-user fa-lg position-absolute top-50 start-50 translate-middle"></i>
+                           </div>
+                        </div>
+                        <img src="../../assets/img/user.jpg" alt="" class="object-fit-contain z-1">
+                     </div>
+                  </div>
+                  <div>
+                     <div>
+                        <div class="fs-6 text-capitalize lh-sm">
+                           <small>Halo,</small> <br>
+                           <b class="fw-medium">yoggi pradhokot</b>
+                        </div>
+                     </div>
+                     <div class="d-flex gap-1 d-none">
+                        <button class="btn btn-outline-dark rounded-0">Sign In</button>
+                        <button class="btn btn-outline-dark rounded-0">Sign Up</button>
+                     </div>
+                  </div>
+               </div>
                <button class="btn-close rounded-0" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
             </div>
             <div class="offcanvas-body">
@@ -102,12 +126,6 @@
                </nav>
             </div>
             <div class="offcanvas-header flex-column row-gap-3 small">
-               <hr class="w-100 m-0">
-               <div class="small w-100">
-                  <div class="float-end small">
-                     <script src="layout/sosmed.js"></script>
-                  </div>
-               </div>
                <div class="trigger-account w-100">
                   <script src="layout/trigger-account.js"></script>
                </div>
@@ -116,10 +134,14 @@
       </div><!-- end container -->
    </div>
 
-   <section aria-label="home banner" class="mb-3 mb-lg-5">
+   <section aria-label="home banner" class="mb-3 mb-md-5">
       <div class="bg-dark">
-         <div style="aspect-ratio: 1/1;" class="d-lg-none"></div>
-         <div style="aspect-ratio: 3.6/1;" class="d-none d-lg-block"></div>
+         <div style="aspect-ratio: 1/1;" class="d-md-none">
+            <img src="../../assets/img/home-banner-mobile-promo.jpg" width="100%" height="100%" alt="" class="object-fit-cover">
+         </div>
+         <div style="aspect-ratio: 3.6/1;" class="d-none d-md-block">
+            <img src="../../assets/img/home-banner-desktop-promo.jpg" width="100%" height="100%" alt="" class="object-fit-cover">
+         </div>
       </div>
    </section><!-- end home banner -->
 
@@ -128,13 +150,20 @@
          <div class="row mb-3 align-items-baseline">
             <div class="col">
                <h2 class="fs-3">
-                  <strong class="fw-medium">Kopi Uang Emas</strong>
+                  <strong class="fw-medium">Consumer</strong>
                </h2>
-               <p class="d-none d-md-block">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus commodi voluptas aut veniam. Totam possimus eius dicta, officiis laboriosam rerum. Suscipit totam repellendus vitae cum minima iure, assumenda eaque.
-               </p>
+               <div class="text-capitalize d-flex flex-wrap gap-1">
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">all product</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">minuman</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">kopi</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">premium</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">supresso</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">capules</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">bag</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark rounded-0 disabled">1000g</a>
+               </div>
             </div><!-- end col -->
-            <div class="col col-auto">
+            <div class="col col-auto float-end">
                <button class="btn btn-outline-dark rounded-0" data-bs-toggle="offcanvas" data-bs-target="#filterSort">
                   <i class="fas fa-filter me-2"></i> <span>Filter | Sort</span>
                </button>
@@ -153,79 +182,7 @@
       </div><!-- end filter & sort -->
    </aside><!-- end filter product -->
 
-   <footer aria-label="page footer" class="small py-3" style="background-color: #f1f2f2; padding-top: 2rem !important;">
-      <div class="container">
-         <div class="row" style="row-gap: 2rem;">
-            <div class="col col-12 col-lg-auto order-lg-2 d-flex flex-column column-sidefooter">
-               <div class="flex-grow-1">
-                  <h5 class="fs-6 text-uppercase d-none">
-                     <strong class="fw-medium">sosial media</strong>
-                  </h5>
-                  <script src="layout/sosmed.js"></script>
-               </div>
-               <div class="mb-lg-3">
-                  <p>
-                     Bergabunglah dengan kami dan dapatkan penawaran-penawaran menarik lainnya.
-                  </p>
-                  <a href="#" class="btn btn-outline-dark rounded-0 w-100 text-uppercase">
-                     subscribe
-                  </a>
-               </div>
-            </div><!-- end col -->
-            <div class="col col-12 col-lg order-lg-1">
-               <div class="row row-cols-2 row-gap-3 row-cols-md-auto justify-content-md-between row-cols-lg-auto justify-content-lg-start g-lg-0 column-gap-lg-5">
-                  <div class="col">
-                     <h5 class="fs-6 text-uppercase">
-                        <strong class="fw-medium">informasi</strong>
-                     </h5>
-                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
-                        <li><a href="#" class="text-reset">hubungi kami</a></li>
-                        <li><a href="#" class="text-reset">tentang kami</a></li>
-                        <li><a href="#" class="text-reset">berita</a></li>
-                        <li><a href="#" class="text-reset">promo</a></li>
-                        <li><a href="#" class="text-reset">KOL</a></li>
-                     </ul>
-                  </div><!-- end col -->
-                  <div class="col">
-                     <h5 class="fs-6 text-uppercase">
-                        <strong class="fw-medium">akun</strong>
-                     </h5>
-                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
-                        <li><a href="#" class="text-reset">akun saya</a></li>
-                        <li><a href="#" class="text-reset">konfirmasi pembayaran</a></li>
-                        <li><a href="#" class="text-reset">pesanan saya</a></li>
-                        <li><a href="#" class="text-reset">lacak pengiriman</a></li>
-                     </ul>
-                  </div><!-- end col -->
-                  <div class="col">
-                     <h5 class="fs-6 text-uppercase">
-                        <strong class="fw-medium">belanja</strong>
-                     </h5>
-                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
-                        <li><a href="#" class="text-reset">cara pembelian</a></li>
-                        <li><a href="#" class="text-reset">cara pembayaran</a></li>
-                        <li><a href="#" class="text-reset">cara pengembalian</a></li>
-                     </ul>
-                  </div><!-- end col -->
-                  <div class="col">
-                     <h5 class="fs-6 text-uppercase">
-                        <strong class="fw-medium">layanan</strong>
-                     </h5>
-                     <ul class="list-unstyled text-capitalize d-grid row-gap-2">
-                        <li><a href="#" class="text-reset">kebijakan privasi</a></li>
-                        <li><a href="#" class="text-reset">syarat & ketentuan</a></li>
-                        <li><a href="#" class="text-reset">FAQ</a></li>
-                     </ul>
-                  </div><!-- end col -->
-               </div><!-- end row -->
-            </div><!-- end col -->
-         </div><!-- end row -->
-      </div><!-- end container -->
-      <hr>
-      <p class="text-center opacity-75">
-         &copy; 2025 Copyright INDRACOSTORE
-      </p>
-   </footer><!-- end page footer -->
+   <script src="layout/footer.js"></script>
 
    <script src="../../assets/vendors/jquery-3.7.1.min.js"></script>
    <script src="../../assets/vendors/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
